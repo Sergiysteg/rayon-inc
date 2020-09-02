@@ -1,0 +1,22 @@
+app/
+    component/
+        header
+        footer
+    pages/
+        discount
+        basket
+        man
+        woman
+        brand
+        home
+        localstores
+        admin/
+            orders
+            category
+            lookbook
+    shared/
+        guards/
+        interfaces/
+        models/
+        pipes/
+        servisec/

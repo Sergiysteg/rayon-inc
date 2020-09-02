@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "MyriadPro";
+    src: local('MyriadPro'), local('MyriadPro'), url('MyriadProRegular.woff') format('woff'), url('MyriadProRegular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}

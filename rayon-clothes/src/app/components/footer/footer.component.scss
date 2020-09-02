@@ -1,0 +1,38 @@
+@import '../../../assets/variables/variables.scss';
+
+.footer {
+    background: $bgWhiteColor;
+    margin-top: 20px;
+
+    .footer-information {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        span {
+            display: block;
+            font-family: sans-serif;
+        }
+
+        p {
+            font-family: 'Bebas Bold';
+        }
+    }
+    .madeBy {
+        background: $bgColor;
+        margin-top: 20px;
+    }
+    .madeBy-wrapper {
+        display: flex;
+        justify-content: space-between;
+        color: $bgLightColor;
+        padding: 10px 0px;
+    }
+
+    .madeBy-design {
+        text-align: right;
+
+        span {
+            margin-left: 20px;
+        }
+    }
+}
