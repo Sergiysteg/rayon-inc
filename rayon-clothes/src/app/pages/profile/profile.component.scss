@@ -1,0 +1,43 @@
+@import '../../../assets/variables/variables.scss';
+
+.profile-item a {
+    display: block;
+    text-align: center;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: $bgColor;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-radius: 3px;
+    font-family: 'Bebas';
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+.profile-item a:hover {
+    color: $activeColor;
+    transition: all 0.3s linear;
+}
+
+// ----------------ICONS-------------
+.profile-link, .cloth-link {
+    position: relative;
+}
+.profile-link::before, .cloth-link::before {
+    font-family: "icomoon";
+    position: absolute;
+    left: -30px;
+} 
+.profile-link::before {
+    content: "\f007";
+    top: 1px;
+}
+.cloth-link::before {
+    content: "\f0f2";
+    top: 0;
+}
+// ----------------ICONS-------------
+
+.signOut {
+    width: 100%;
+}
+

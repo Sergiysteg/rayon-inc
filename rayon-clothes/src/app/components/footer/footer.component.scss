@@ -3,10 +3,11 @@
 .footer {
     background: $bgWhiteColor;
     margin-top: 20px;
+    padding-top: 10px;
 
     .footer-information {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
 
         span {
             display: block;
@@ -15,6 +16,7 @@
 
         p {
             font-family: 'Bebas Bold';
+            margin-bottom: 15px;
         }
     }
     .madeBy {
@@ -34,5 +36,32 @@
         span {
             margin-left: 20px;
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer .footer-information {
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .footer .footer-information p{
+        margin-bottom: 5px;
+    }
+    .footer .footer-information .footer-acount,
+    .footer .footer-information .footer-contact {
+        margin-top: 20px;
+    }
+    .footer .madeBy-corp {
+        display: flex;
+        align-items: center;
+    }
+    .footer .madeBy-design {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 575px){
+    .footer .madeBy {
+        font-size: 12px;
+        padding: 0 10px;
     }
 }

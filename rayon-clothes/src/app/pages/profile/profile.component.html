@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-2">
+            <div class="profile-item">
+                <a [routerLink]="[ 'profile-info' ]" routerLinkActive="active"><span class="profile-link">Profile</span></a>
+                <a [routerLink]="[ 'profile-clothes' ]" routerLinkActive="active"><span class="cloth-link">Clothes</span></a>
+                <a [routerLink]="[ '' ]" routerLinkActive="active"><span class="cloth-link">Clothes</span></a>
+                <button class="signOut" (click)="signOut()" type="button">Sing Out</button>
+            </div>
+        </div>
+        <div class="col-10">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

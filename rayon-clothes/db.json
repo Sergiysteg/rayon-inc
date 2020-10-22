@@ -1,6 +1,607 @@
 {
-    "category": [],
-    "man": [],
-    "women": [],
-    "unisex": []
+  "category": [
+    {
+      "nameEN": "jacket",
+      "id": 1
+    },
+    {
+      "nameEN": "hoodie",
+      "id": 2
+    },
+    {
+      "nameEN": "overshirt",
+      "id": 3
+    },
+    {
+      "nameEN": "bucket-hat",
+      "id": 4
+    },
+    {
+      "nameEN": "hat",
+      "id": 5
+    },
+    {
+      "nameEN": "t-shirt",
+      "id": 6
+    }
+  ],
+  "cloth": [
+    {
+      "id": 1,
+      "category": {
+        "nameEN": "hat",
+        "id": 5
+      },
+      "description": "Basic Hat-Long Biny",
+      "color": "red",
+      "material": "coton",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fhat_woman.webp?alt=media&token=bd68183f-bdf4-400e-883a-13882438857e",
+      "price": 300,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 2,
+      "category": {
+        "nameEN": "bucket-hat",
+        "id": 4
+      },
+      "description": "Панама RЙN Tie-Dye",
+      "color": "white",
+      "material": "jeans deny",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fpanama_men_1.webp?alt=media&token=f3b9176c-04a7-4fa4-9166-4baccf4751d6",
+      "price": 400,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 3,
+      "category": {
+        "nameEN": "hoodie",
+        "id": 2
+      },
+      "description": "Oversize Hoodie",
+      "color": " beige",
+      "material": "coton",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fhoodie_man.webp?alt=media&token=f7b3db9c-8b42-4cca-9eae-397f3b6efc05",
+      "price": 600,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 4,
+      "category": {
+        "nameEN": "overshirt",
+        "id": 3
+      },
+      "description": "Military Jacket-Overshirt",
+      "color": "black",
+      "material": "sarja",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fjacket_woman.webp?alt=media&token=b52937fb-24ed-4de9-8ec5-b5af6c8799f5",
+      "price": 800,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 5,
+      "category": {
+        "nameEN": "jacket",
+        "id": 1
+      },
+      "description": "Military Jacket",
+      "color": "black",
+      "material": "jeans deny",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fjacket_man.webp?alt=media&token=fa939970-2173-474b-967a-3c56d4bc5672",
+      "price": 1200,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 6,
+      "category": {
+        "nameEN": "bucket-hat",
+        "id": 4
+      },
+      "description": "Warm Bilateral Checkered",
+      "color": "red-white",
+      "material": "cotton-poliester",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fpanama_women_1.webp?alt=media&token=0a18e57b-1ca5-40c7-92a2-4b1833666523",
+      "price": 450,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 7,
+      "category": {
+        "nameEN": "hat",
+        "id": 5
+      },
+      "description": "Basic Hat-Biny Short",
+      "color": "black",
+      "material": "cotton",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fhat_man.webp?alt=media&token=3f96d0aa-480e-459b-8089-b648ea5b4180",
+      "price": 300,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 8,
+      "category": {
+        "nameEN": "overshirt",
+        "id": 3
+      },
+      "description": "Basic Oversize",
+      "color": "gray",
+      "material": "jeans deny",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fshirt.webp?alt=media&token=ea8ae7a1-931e-4a39-bb3d-ead105094cba",
+      "price": 500,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "category": {
+        "nameEN": "t-shirt",
+        "id": 6
+      },
+      "description": "Basic T-shirt RЙN",
+      "color": "white",
+      "material": "coton",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Ft-shirt_white.jpeg?alt=media&token=8317eb61-9f36-419d-8525-d3fdbc84abda",
+      "price": 400,
+      "count": 1,
+      "id": 9,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "userName": "Sergiy",
+      "userPhone": "0636666666",
+      "userCity": "Lviv",
+      "userStreet": "Dragomanova",
+      "userHouse": "34/5",
+      "userComment": "ASAP",
+      "totalPayment": 1400,
+      "userOrder": [
+        {
+          "id": 1,
+          "category": {
+            "nameEN": "hat",
+            "id": 5
+          },
+          "description": "Basic Hat-Long Biny",
+          "color": "red",
+          "material": "coton",
+          "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fhat_woman.webp?alt=media&token=bd68183f-bdf4-400e-883a-13882438857e",
+          "price": 300,
+          "count": 2,
+          "size": [
+            "S",
+            "M",
+            "ML",
+            "XL"
+          ]
+        },
+        {
+          "id": 2,
+          "category": {
+            "nameEN": "bucket-hat",
+            "id": 4
+          },
+          "description": "Панама RЙN Tie-Dye",
+          "color": "white",
+          "material": "jeans deny",
+          "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fpanama_men_1.webp?alt=media&token=f3b9176c-04a7-4fa4-9166-4baccf4751d6",
+          "price": 400,
+          "count": 2,
+          "size": [
+            "S",
+            "M",
+            "ML",
+            "XL"
+          ]
+        }
+      ],
+      "dateOrder": "2020-09-29T11:33:25.794Z",
+      "statusOrder": "в обробці",
+      "id": 1
+    },
+    {
+      "userName": "Anna",
+      "userPhone": "0635555555",
+      "userCity": "Kyiv",
+      "userStreet": "Franka",
+      "userHouse": "35/5",
+      "userComment": "For example",
+      "totalPayment": 2000,
+      "userOrder": [
+        {
+          "id": 5,
+          "category": {
+            "nameEN": "jacket",
+            "id": 1
+          },
+          "description": "Military Jacket",
+          "color": "black",
+          "material": "jeans deny",
+          "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fjacket_man.webp?alt=media&token=fa939970-2173-474b-967a-3c56d4bc5672",
+          "price": 1200,
+          "count": 1,
+          "size": [
+            "S",
+            "M",
+            "ML",
+            "XL"
+          ]
+        },
+        {
+          "id": 4,
+          "category": {
+            "nameEN": "overshirt",
+            "id": 3
+          },
+          "description": "Military Jacket-Overshirt",
+          "color": "black",
+          "material": "sarja",
+          "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fjacket_woman.webp?alt=media&token=b52937fb-24ed-4de9-8ec5-b5af6c8799f5",
+          "price": 800,
+          "count": 1,
+          "size": [
+            "S",
+            "M",
+            "ML",
+            "XL"
+          ]
+        }
+      ],
+      "dateOrder": "2020-09-29T11:34:10.860Z",
+      "statusOrder": "в обробці",
+      "id": 2
+    },
+    {
+      "userName": "Petro",
+      "userPhone": "0630000000",
+      "userCity": "Odessa",
+      "userStreet": "Fredra",
+      "userHouse": "20/12",
+      "userComment": "Example!",
+      "totalPayment": 700,
+      "userOrder": [
+        {
+          "id": 1,
+          "category": {
+            "nameEN": "hat",
+            "id": 5
+          },
+          "description": "Basic Hat-Long Biny",
+          "color": "red",
+          "material": "coton",
+          "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fhat_woman.webp?alt=media&token=bd68183f-bdf4-400e-883a-13882438857e",
+          "price": 300,
+          "count": 1,
+          "size": [
+            "S",
+            "M",
+            "ML",
+            "XL"
+          ]
+        },
+        {
+          "id": 2,
+          "category": {
+            "nameEN": "bucket-hat",
+            "id": 4
+          },
+          "description": "Панама RЙN Tie-Dye",
+          "color": "white",
+          "material": "jeans deny",
+          "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fpanama_men_1.webp?alt=media&token=f3b9176c-04a7-4fa4-9166-4baccf4751d6",
+          "price": 400,
+          "count": 1,
+          "size": [
+            "S",
+            "M",
+            "ML",
+            "XL"
+          ]
+        }
+      ],
+      "dateOrder": "2020-09-29T13:54:44.844Z",
+      "statusOrder": "в обробці",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "userName": "Vasil",
+      "userPhone": "0635555555",
+      "userCity": "Львів",
+      "userStreet": "Franka",
+      "userHouse": "34/5",
+      "userComment": "Asap",
+      "totalPayment": 2400,
+      "userOrder": [
+        {
+          "id": 4,
+          "category": {
+            "nameEN": "overshirt",
+            "id": 3
+          },
+          "description": "Military Jacket-Overshirt",
+          "color": "black",
+          "material": "sarja",
+          "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fjacket_woman.webp?alt=media&token=b52937fb-24ed-4de9-8ec5-b5af6c8799f5",
+          "price": 800,
+          "count": 2,
+          "size": [
+            "S",
+            "M",
+            "ML",
+            "XL"
+          ]
+        }
+      ],
+      "dateOrder": "2020-09-29T17:27:55.670Z",
+      "statusOrder": "виконно"
+    }
+  ],
+  "popular": [
+    {
+      "id": 2,
+      "category": {
+        "nameEN": "bucket-hat",
+        "id": 4
+      },
+      "description": "Панама RЙN Tie-Dye",
+      "color": "white",
+      "material": "jeans deny",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fpanama_men_1.webp?alt=media&token=f3b9176c-04a7-4fa4-9166-4baccf4751d6",
+      "price": 400,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 8,
+      "category": {
+        "nameEN": "overshirt",
+        "id": 3
+      },
+      "description": "Basic Oversize",
+      "color": "gray",
+      "material": "jeans deny",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fshirt.webp?alt=media&token=ea8ae7a1-931e-4a39-bb3d-ead105094cba",
+      "price": 500,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 7,
+      "category": {
+        "nameEN": "hat",
+        "id": 5
+      },
+      "description": "Basic Hat-Biny Short",
+      "color": "black",
+      "material": "cotton",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fhat_man.webp?alt=media&token=3f96d0aa-480e-459b-8089-b648ea5b4180",
+      "price": 300,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 5,
+      "category": {
+        "nameEN": "jacket",
+        "id": 1
+      },
+      "description": "Military Jacket",
+      "color": "black",
+      "material": "jeans deny",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fjacket_man.webp?alt=media&token=fa939970-2173-474b-967a-3c56d4bc5672",
+      "price": 1200,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    }
+  ],
+  "arrivals": [
+    {
+      "id": 7,
+      "category": {
+        "nameEN": "hat",
+        "id": 5
+      },
+      "description": "Basic Hat-Biny Short",
+      "color": "black",
+      "material": "cotton",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fhat_man.webp?alt=media&token=3f96d0aa-480e-459b-8089-b648ea5b4180",
+      "price": 300,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "category": {
+        "nameEN": "t-shirt",
+        "id": 6
+      },
+      "description": "Basic T-shirt RЙN",
+      "color": "white",
+      "material": "coton",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Ft-shirt_white.jpeg?alt=media&token=8317eb61-9f36-419d-8525-d3fdbc84abda",
+      "price": 400,
+      "count": 1,
+      "id": 9,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 3,
+      "category": {
+        "nameEN": "hoodie",
+        "id": 2
+      },
+      "description": "Oversize Hoodie",
+      "color": " beige",
+      "material": "coton",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fhoodie_man.webp?alt=media&token=f7b3db9c-8b42-4cca-9eae-397f3b6efc05",
+      "price": 600,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    }
+  ],
+  "offers": [
+    {
+      "id": 1,
+      "category": {
+        "nameEN": "hat",
+        "id": 5
+      },
+      "description": "Basic Hat-Long Biny",
+      "color": "red",
+      "material": "coton",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fhat_woman.webp?alt=media&token=bd68183f-bdf4-400e-883a-13882438857e",
+      "price": 300,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "category": {
+        "nameEN": "t-shirt",
+        "id": 6
+      },
+      "description": "Basic T-shirt RЙN",
+      "color": "white",
+      "material": "coton",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Ft-shirt_white.jpeg?alt=media&token=8317eb61-9f36-419d-8525-d3fdbc84abda",
+      "price": 400,
+      "count": 1,
+      "id": 9,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 2,
+      "category": {
+        "nameEN": "bucket-hat",
+        "id": 4
+      },
+      "description": "Панама RЙN Tie-Dye",
+      "color": "white",
+      "material": "jeans deny",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fpanama_men_1.webp?alt=media&token=f3b9176c-04a7-4fa4-9166-4baccf4751d6",
+      "price": 400,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    },
+    {
+      "id": 4,
+      "category": {
+        "nameEN": "overshirt",
+        "id": 3
+      },
+      "description": "Military Jacket-Overshirt",
+      "color": "black",
+      "material": "sarja",
+      "image": "https://firebasestorage.googleapis.com/v0/b/rayon-clothes.appspot.com/o/images%2Fjacket_woman.webp?alt=media&token=b52937fb-24ed-4de9-8ec5-b5af6c8799f5",
+      "price": 800,
+      "count": 1,
+      "size": [
+        "S",
+        "M",
+        "ML",
+        "XL"
+      ]
+    }
+  ]
 }

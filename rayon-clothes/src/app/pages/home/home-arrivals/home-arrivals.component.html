@@ -1,0 +1,22 @@
+<div class="item-wrapper">
+    <div class="item col-md-6 col-lg-6 col-sm-6" *ngFor="let cloth of clothes">
+        <div class="item-block">
+            <div class="bgImage" [style.backgroundImage]="'url('+cloth.image+')'"></div>
+            <a class="item-link" [routerLink]="[ '/cloth/'+cloth.category.nameEN, cloth.id ]">
+                <div class="overlay"></div>
+            </a>
+            <div class="item-content">
+                <div class="item-text">
+                    <a [routerLink]="[ '/cloth'+cloth.category.nameEN, cloth.id ]">
+                        <span>{{ cloth.description }} </span>
+                        <span><b>{{ cloth.color }}</b></span>
+                    </a>
+                </div>
+                <div class="item-buttons">
+                    <div class="item-heart" (click)="saveToProfile()"></div>
+                    <div class="item-shop" (click)="addToBasket(cloth)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

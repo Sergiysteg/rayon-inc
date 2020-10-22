@@ -2,18 +2,20 @@ app/
     component/
         header
         footer
+    admin/
+        orders
+        category
+        clothes
+        lookbook
     pages/
-        discount
         basket
+        sign-in
+        register
         man
         woman
         brand
         home
         localstores
-        admin/
-            orders
-            category
-            lookbook
     shared/
         guards/
         interfaces/

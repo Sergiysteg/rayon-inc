@@ -1,0 +1,73 @@
+<div class="container-fluid border rounded">
+  <div class="row bg-light d-flex justify-content-between p-2 align-items-center border-bottom">
+    <div class="col-2">
+      <span><strong>Category</strong></span>
+    </div>
+    <div class="buton-add h-100 col-2">
+      <button type="button" class="btn btn-dark btn-block" (click)="openAddModal(addCateg)">Add</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <div class="form-group mt-3 border-bottom pb-3">
+        <input type="text" class="form-control" placeholder="filter category.." [(ngModel)]="searchCategory"
+          name="searchCategory">
+      </div>
+      <div class="">
+        <table class="table table-bordered">
+          <thead class="thead-light">
+            <tr>
+              <th [class.active]="order === 'nameEN'" (click)="setOrder('nameEN')">
+                Name <span [hidden]="reverse">▼</span><span [hidden]="!reverse">▲</span>
+              </th>
+              <th style="width: 100px;">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let cat of adminCategory | orderBy: order:reverse:'case-insensitive'">
+              <td>{{ cat.nameEN | titlecase}}</td>
+              <td>
+                <button type="button" class="btn btn-dark" (click)="openDeleteModal(confirm, cat.id)">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #confirm>
+  <div class="modal-body">
+    <form>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-secondary btn-block" (click)="closeModal()">Close</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-dark btn-block" (click)="deleteCategory()">Delete</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</ng-template>
+<ng-template #addCateg>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Category model</h4>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="name EN here.." [(ngModel)]="nameEN" name="nameEN"
+            autocomplete="off">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+    <button type="button" class="btn btn-dark" (click)="addCategory()"
+      [disabled]="nameEN.length === 0">Add</button>
+  </div>
+</ng-template>

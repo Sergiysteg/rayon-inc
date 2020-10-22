@@ -1,0 +1,325 @@
+@import '../../../assets/variables/variables.scss';
+
+.cloth__details {
+    width: 100%;
+    margin: 30px 0px;
+
+// --------------- Cloth Image ----------    
+    .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+    }
+    .icon-arrow {
+        font-size: 20px;
+        color: black;
+    }
+
+    .cloth__wrapper{
+        width: 100%;
+    }
+    .cloth__image-wrapper {
+        box-shadow: 0px 0px 20px 6px $textColor;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 650px;
+    }
+    .cloth__slideImage {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        display: flex;
+        transition: left .3s linear;
+    }
+    .cloth__slideImage .image {
+        height: 100%;
+    }
+    .cloth__slideImage img {
+        height: 100%;
+        width: 445px;
+        object-fit: cover;
+    }
+    .slideLeft, .slideRight {
+        position: absolute;
+        display: block;
+        z-index: 2;
+        padding: 5px;
+    }
+    .slideLeft {
+        top: 50%;
+        left: 0;
+
+        &:hover {
+            background-color: $activeColor;
+            color: white;
+        }
+    }
+    .slideRight {
+        top: 50%;
+        right: 0;
+        
+        &:hover {
+            background-color: $activeColor;
+            color: white;
+        }
+    }
+// --------------- Cloth Image ----------
+
+// --------------- Cloth Content ----------
+    .cloth__content {
+        color: $textColor;
+    }
+    .cloth__content__title {
+        font-family: 'Babes Bold';
+        color: black;
+    }
+    .cloth__content__personInfo p {
+        color: black;
+        margin: 0;
+
+        span {
+            color: $textColor;
+        }
+    }
+    .cloth__content__text p {
+        font-size: 15px;
+        text-align: justify;
+        margin: 10px 0px;
+    }
+    .cloth__content__productInfo ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+// --------Select Form, Button------------
+    .selectForm {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .selectForm label {
+        font-family: 'Bebas Bold';
+        font-size: 20px;
+        color: black;
+    }
+    .quantity {
+        position: relative;
+        border: 1px solid $textColor;
+        border-radius: .25rem;
+        width: 100px;
+        padding: .375rem .75rem;
+        line-height: 1.5;
+        color: #495057;
+    }
+    .plus, .minus {
+        outline: 1px solid $textColor;
+        position: absolute;
+        width: 30px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .plus {
+        top: 0;
+        right: 0;
+    }
+    .minus {
+        bottom: 0;
+        right: 0;
+    }
+    .cloth__content--addToBusket {
+        border: 1px solid black;
+        padding: 10px;
+        letter-spacing: 6px;
+        font-family: 'Bebas';
+        font-size: 16pt;
+        background-color: white;
+        margin-top: 20px;
+    }
+    .cloth__content--addToBusket::before {
+        content: '\f07a';
+        font-family: 'icomoon';
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .cloth__content--addToBusket:hover {
+        color: white;
+        background-color: $bgColor;
+    }
+    .cloth__content--addToBusket:focus {
+        outline: none;
+    }
+}
+// --------------- Cloth Content, Button----------
+
+// ------------Cloth Info, TABS---------
+.cloth__info {
+    margin-top: 30px;
+
+    label {
+        margin: 0;
+    }
+
+    .warpper{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tabs {
+        width: 100%;
+        background: $bgWhiteColor;
+    }
+    .tab{
+        font-size: 30px;
+        font-family: 'Bebas';
+        cursor: pointer;
+        padding: 10px 20px;
+        // background: $bgWhiteColor;
+        display: inline-block;
+        color: $bgColor;
+    }
+    .panels{
+        min-height: 200px;
+        width: 100%;
+        overflow: hidden;
+        padding: 20px;  
+    }
+    .panel{
+        display: none;
+        animation: fadein .8s;
+    }
+    .panel p {
+        text-align: justify;
+    }
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+    }
+    .panel-title{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .radio{
+        display:none;
+    }
+    #one:checked ~ .panels #one-panel,
+    #two:checked ~ .panels #two-panel,
+    #three:checked ~ .panels #three-panel{
+        display:block
+    }
+    #one:checked ~ .tabs #one-tab,
+    #two:checked ~ .tabs #two-tab,
+    #three:checked ~ .tabs #three-tab{
+        background: $bgColor;
+        color: $textColor;
+    }
+}
+
+// ------------Cloth Info, TABS---------
+
+@media screen and (max-width: 1199px){
+    .cloth__details {
+        .cloth__image-wrapper {
+            height: 550px;
+        }
+        .cloth__slideImage img {
+            height: 100%;
+            width: 370px;
+        }
+    }   
+}
+@media screen and (max-width: 991px){
+    .cloth__details {
+        .cloth__image-wrapper {
+            height: 390px;
+        }
+        .cloth__slideImage img {
+            width: 270px;
+        }
+        .cloth__content__title {
+            font-size: 25px;
+        }
+        .cloth__content__buttons {
+            padding-left: 15px;
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .cloth__details {
+        .cloth__image-wrapper {
+            height: 700px;
+        }
+        .cloth__slideImage img {
+            width: 510px;
+        }
+        .cloth__content__title {
+            font-size: 25px;
+        }
+        .cloth__content__buttons {
+            padding-left: 15px;
+        }
+        .cloth__content {
+            margin-top: 30px;
+        }
+    }
+    .cloth__info {
+        .tab{
+            font-size: 25px;
+        }
+    }   
+}
+@media screen and (max-width: 576px) {
+    .cloth__details {
+        .cloth__slideImage {
+            width: 200%;
+        }
+        .cloth__slideImage .image {
+            height: 100%;
+            width: 100%;
+        }
+        .cloth__slideImage img {
+            width: 100%;
+        }
+        .cloth__content__buttons {
+            padding-left: 15px;
+        }
+    }
+    .cloth__info {
+        .tab{
+            font-size: 25px;
+        }
+        .panel {
+            font-size: 15px;
+        }
+    }   
+}
+@media screen and (max-width: 576px) {
+    .cloth__info {
+        .tab{
+            font-size: 22px;
+        }
+    }  
+}
+@media screen and (max-width: 490px) {
+    .cloth__details .cloth__image-wrapper {
+        height: 500px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .cloth__info {
+        .tab{
+            font-size: 20px;
+        }
+    }   
+}

@@ -1,0 +1,23 @@
+<div class="auth row">
+    <div class="signIn col-12 col-md-4">
+        <div class="auth-text">Sign In</div>
+        <form class="signIn-form">
+            <input type="email" placeholder="Your email" [(ngModel)]="signEmail" name="signEmail">
+            <input type="password" placeholder="Your password" [(ngModel)]="signPassword" name="signPassword">
+            <button type="submit" (click)="loginUser()">Sign In</button>
+        </form>
+    </div>
+    <div class="register col-12 col-md-4">
+        <div class="auth-text">Register</div>
+        <form class="register-form">
+            <input type="email" placeholder="Your email" [(ngModel)]="regEmail" name="regEmail">
+            <input type="password" placeholder="Your password" [(ngModel)]="regPassword" name="regPassword">
+            <input type="password" placeholder="Comfirm password" [(ngModel)]="regConfirmPass" name="regConfirmPass">
+            <div class="register-checkbox">
+                <input type="checkbox"> Sing up for exclusive updates
+            </div>
+            <button type="submit" (click)="registerUser()">Create Account</button>
+        </form>
+    </div>
+</div>
+

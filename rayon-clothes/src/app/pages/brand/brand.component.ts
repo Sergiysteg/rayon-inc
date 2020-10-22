@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./brand.component.scss']
 })
 export class BrandComponent implements OnInit {
-
+  mainTitle: string = 'Brand';
+  mainDesc: string = 'Some other text';
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,51 @@
+<div class="container-fluid border rounded">
+    <div class="row">
+        <div class="container">
+            <div class="element-wrapper">
+                <div class="element" *ngFor="let cloth of adminCloth">
+                    <img [src]="cloth.image" style="width: 80px; height: 100px;" alt="">
+                    <div class="overlay">
+                        <span (click)="addToPopular(cloth)">Add</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="table table-bordered">
+                <table class="table mt-3 table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Color</th>
+                            <th scope="col">Material</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let cloth of adminOffers">
+                            <td>{{ cloth.id }}</td>
+                            <td>{{ cloth.category.nameEN | titlecase }}</td>
+                            <td>{{ cloth.description | slice:0:50 }}</td>
+                            <td>{{ cloth.color }}</td>
+                            <td>{{ cloth.material }}</td>
+                            <td>{{ cloth.price }}</td>
+                            <td>
+                                <img [src]="cloth.image" style="width: 100px; height: 100px;" alt="">
+                            </td>
+                            <td>
+                                <input type="button" value="delete" class="btn btn-danger"
+                                    (click)="deleteCloth(cloth.id)">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

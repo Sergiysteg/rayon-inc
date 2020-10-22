@@ -1,0 +1,28 @@
+@import '../../../../assets/variables/variables.scss';
+
+.info__header {
+    background-color: $activeColor;
+    width: 100%;
+    min-height: 200px;
+    // margin: 0 auto;
+    position: relative;
+}
+.info__person {
+    background-color: white;
+    border-radius: 50%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.info__image {
+    width: 100%;
+    object-fit: cover;
+}
+.info__td {
+    padding: 15px 30px 15px 0px;
+}
+.info__td:nth-child(odd){
+    font-family: 'Montserrat';
+}

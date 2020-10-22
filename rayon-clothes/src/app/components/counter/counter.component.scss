@@ -1,0 +1,59 @@
+@import '../../../assets/variables/variables.scss';
+
+.quantity {
+    position: relative;
+    width: 100px;
+}
+.quantity__number {
+    border: 1px solid $textColor;
+    border-radius: .25rem;
+    height: 38px;
+    width: 100px;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+}
+.quantity__number:focus {
+    outline: none;
+}
+.plus, .minus {
+    border-left: 1px solid $textColor;
+    position: absolute;
+    width: 30px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.plus {
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid $textColor;
+}
+.minus {
+    bottom: 0;
+    right: 0;
+}
+.cloth__content--addToBusket {
+    border: 1px solid black;
+    padding: 10px;
+    letter-spacing: 6px;
+    font-family: 'Bebas';
+    font-size: 16pt;
+    background-color: white;
+    margin-top: 20px;
+}
+.cloth__content--addToBusket::before {
+    content: '\f07a';
+    font-family: 'icomoon';
+    display: inline-block;
+    margin-right: 5px;
+}
+.cloth__content--addToBusket:hover {
+    color: white;
+    background-color: $bgColor;
+}
+.cloth__content--addToBusket:focus {
+    outline: none;
+}

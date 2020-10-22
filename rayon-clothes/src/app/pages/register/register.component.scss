@@ -1,0 +1,110 @@
+@import '../../../assets/variables/variables.scss';
+
+.auth {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 5px 30px;
+
+    .auth-text {
+        font-family: 'Bebas Bold';
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+    }
+    .register-form input[type='password'], input[type='email'] {
+        display: block;
+        margin-top: 35px;
+        width: 100%;
+        padding: 5px;
+        font-family: 'Montserrat Light';
+        border: 1px solid $textColor;
+        border-left: none;
+    }
+    .signIn-form  input[type='email'], input[type='password'] {
+        display: block;
+        margin-top: 35px;
+        width: 100%;
+        padding: 5px;
+        font-family: 'Montserrat Light';
+        border: 1px solid $textColor;
+        border-right: none;
+    }
+    .register-form input:focus, .signIn-form input:focus {
+        outline: none;
+        border: 1px solid $activeColor;
+    }
+    input[type='checkbox'] {
+        margin-top: 35px;
+        margin-right: 10px;
+    }
+    button {
+        border: 1px solid black;
+        background: none;
+        color: black;
+        padding: 0.5em;
+        margin-top: 35px;
+        font-family: 'Bebas';
+        font-size: 20px;
+        letter-spacing: 2px;
+
+        transition: background .2s linear;
+    }
+    button:hover {
+        background: $activeColor;
+        border: 1px solid $activeColor;
+        color: white;
+    }
+    button:focus {
+        outline: none;
+    }
+    .register-checkbox {
+        color: $textColor;
+    }
+    .register {
+        border-left: 1px solid $textColor;
+        padding-left: 30px;
+    }
+    .signIn {
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .auth {
+        .auth-text {
+            margin: 0;
+        }
+        .signIn, .register {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .register-form, .signIn-form {
+            width: 100%;
+        }
+        .register-form input[type='password']:first-child, 
+        .register-form input[type='email']:first-child {
+            margin-top: 20px;
+        }
+        .signIn-form input[type='password']:first-child, 
+        .signIn-form input[type='email']:first-child {
+            margin-top: 20px;
+        }
+        .signIn-form  input[type='email'], input[type='password'] {
+            border-right: 1px solid $textColor;
+            border-left: none;
+        }
+        .register {
+            border-top: 1px solid $textColor;
+            border-left: none;
+            padding-left: 15px;
+            padding-top: 15px;
+        }
+        .signIn {
+            padding-right: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}

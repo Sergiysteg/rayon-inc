@@ -4,72 +4,28 @@
         <h2>Wear Responsibly</h2>
         <p>Made in Ukraine</p>
         <div class="details">
-            <button class="btn btn-light">Details</button>
+            <a routerLink="brand" class="home__button">Details</a>
         </div>
         <video src="../../../assets/video/video.mp4" autoplay mute loop></video>
     </div>
 </section>
 
-<section class="home-clothes">
+<section class="clothes">
     <div class="container clothes-wrapper">
         <div class="navBlock">
-            <nav class="navbar navbar-expand-sm navbar-light">
-                <div class="collapse navbar-collapse">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#">Popular <span class="sr-only">(current)</span></a>
-                        <a class="nav-link" href="#">New Arrival</a>
-                        <a class="nav-link" href="#">Special Offers</a>
-                    </div>
+            <nav class="navbar">
+                <div class="navbar-block">
+                    <a [routerLink]="['home-popular']" routerLinkActive="active">Popular</a>
+                    <a [routerLink]="['home-arrivals']" routerLinkActive="active">New Arrival</a>
+                    <a [routerLink]="['home-offers']" routerLinkActive="active">Special Offers</a>
                 </div>
             </nav>
         </div>
-        <div class="catalog">
-            <div class="catalog-wrapper">
-                <div class="catalog-item">
-                    <img src="../../../assets/img/img_2.jpg" alt="clothes">
-                    <span>{{ 1200 | currency:'UAH':'symbol-narrow':'2.0-0'}}</span>
-                    <div class="catalog-content">
-                        <div class="catalog-title">Lorem ipsum dolor sit amet.</div>
-                        <div class="catalog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, similique!</div>
-                        <div class="catalog-button">
-                            <div class="catalog-buy"><i class="uil uil-shopping-basket"></i></div>
-                            <div class="catalog-save"><i class="uil uil-heart"></i></div>
-                            <div class="catalog-details"><i class="uil uil-compress-alt"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <img src="../../../assets/img/img_2.jpg" alt="clothes">
-                    <span>{{ 1200 | currency:'UAH':'symbol-narrow':'2.0-0'}}</span>
-                    <div class="catalog-content">
-                        <div class="catalog-title">Lorem ipsum dolor sit amet.</div>
-                        <div class="catalog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, similique!</div>
-                        <div class="catalog-button">
-                            <div class="catalog-buy"><i class="uil uil-shopping-basket"></i></div>
-                            <div class="catalog-save"><i class="uil uil-heart"></i></div>
-                            <div class="catalog-details"><i class="uil uil-compress-alt"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <img src="../../../assets/img/img_2.jpg" alt="clothes">
-                    <span>{{ 1200 | currency:'UAH':'symbol-narrow':'2.0-0'}}</span>
-                    <div class="catalog-content">
-                        <div class="catalog-title">Lorem ipsum dolor sit amet.</div>
-                        <div class="catalog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, similique!</div>
-                        <div class="catalog-button">
-                            <div class="catalog-buy"><i class="uil uil-shopping-basket"></i></div>
-                            <div class="catalog-save"><i class="uil uil-heart"></i></div>
-                            <div class="catalog-details"><i class="uil uil-compress-alt"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <router-outlet></router-outlet>
     </div>
 </section>
 
-<section class="looks">
+<!-- <section class="looks">
     <div class="looks-item">
         <img class="looks-img" src="../../../assets/img/img_people.png" alt="">
         <div class="looks-content">
@@ -94,4 +50,4 @@
             <div class="looks-button">View Now</div>
         </div>
     </div>
-</section>
+</section> -->

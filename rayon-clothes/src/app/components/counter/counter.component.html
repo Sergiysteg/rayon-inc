@@ -1,0 +1,6 @@
+<div class="quantity">
+    <!-- <input class="quantity__number" type="number" [(ngModel)]="cloth.count"> -->
+    <input class="quantity__number" type="text" maxlength="3" [ngModel]="cloth?.count" (changeCount)="cloth.count=$event">
+    <div class="plus" (click)="clothCount(true)">+</div>
+    <div class="minus" (click)="clothCount(false)">-</div>
+</div>

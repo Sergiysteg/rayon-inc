@@ -1,0 +1,322 @@
+@import '../../../assets/variables/variables.scss';
+
+.pointer {
+    cursor: pointer;
+}
+.payItems {
+    border: 1px solid #e6e6e6;
+    padding: 0 20px;
+  }
+  
+  .payItems .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Comfortaa";
+  }
+  
+  .payItems .table .thead {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+  .payItems .table .thead .td {
+    font-weight: 600;
+    padding: 24px 15px;
+    width: 14.3333%;
+  }
+  
+  .payItems .table .thead .td:first-child {
+    padding: 0;
+    width: 4%;
+  }
+  
+  .payItems .table .thead .td:last-child {
+    padding-right: 20px;
+  }
+  
+  .payItems .table .tfoot {
+    font-size: 16px;
+    text-align: right;
+  }
+  
+  .payItems .table .tfoot .tr {
+    border-bottom: 0;
+    float: right;
+  }
+  
+  .payItems .table .tfoot .fullPrice {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    padding: 30px 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .payItems .table .tfoot .fullPrice p {
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .payItems .table .tfoot .fullPrice span,
+  .payItems .table .tfoot .fullPrice i {
+    color: #c80000;
+  }
+  
+  .payItems .table .tbody .td {
+    padding: 20px 15px;
+    height: 120px;
+  }
+  
+  .payItems .table .tbody .td:first-child {
+    padding: 0;
+    width: 1%;
+  }
+  
+  .payItems .table .tbody .td:nth-child(2) {
+    padding-left: 0;
+  }
+  
+  .payItems .table .tr .tr {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  
+  .payItems .table .td {
+    vertical-align: middle;
+  }
+  
+  .payItems .table .td:nth-child(2) {
+    width: 60% !important;
+    padding-left: 0;
+  }
+  
+  .payItems .singleItemPrice {
+    color: #000;
+  }
+  
+  .payItems .singleItemPrice span {
+    margin-right: 3px;
+  }
+  
+  .payItems .itemPrice {
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .payItems .itemPrice span {
+    margin-right: 3px;
+  }
+  
+  .smallProduct {
+    position: relative;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "Roboto";
+  }
+  
+  .smallProduct .as {
+    font-size: 16px;
+  }
+  
+  .smallProduct .as a {
+    -webkit-transition: color .250s linear;
+    -o-transition: color .250s linear;
+    transition: color .250s linear;
+  }
+  
+  .smallProduct .imgWrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    margin-top: -45px;
+    margin-left: 5px;
+    display: block;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-transition: opacity .250s linear;
+    -o-transition: opacity .250s linear;
+    transition: opacity .250s linear;
+  }
+  
+  .smallProduct .smallProductInfo {
+    padding-left: 110px;
+  }
+  
+  .delateProduct {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .delateProduct:before,
+  .delateProduct:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 2px;
+    margin-left: -7px;
+    background: #c80000;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: background .250s linear;
+    -o-transition: background .250s linear;
+    transition: background .250s linear;
+    content: '';
+  }
+  
+  .delateProduct:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .table {
+    display: table;
+  }
+  
+  .table .tr {
+    display: table-row;
+  }
+  
+  .table .td {
+    display: table-cell;
+  }
+  
+  .tableMobTitle {
+    display: none;
+  }
+  
+  .emptyBasker {
+    display: none;
+  }
+  
+  .emptyBas .payItems {
+    padding: 0;
+    display: none;
+  }
+  
+  .emptyBas .tablem,
+  .emptyBas .paySelect,
+  .emptyBas .btnWrapper {
+    display: none;
+  }
+  
+  .emptyBas .emptyBasker {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: "Comfortaa";
+  }
+  
+  .emptyBas .emptyBasker a {
+    color: #c80000;
+  }
+  
+  .deliveryWarning .errorMsg {
+    position: relative;
+    font-size: 14px;
+    color: rgba(212, 0, 0, 0.6);
+    border: 1px solid rgba(212, 0, 0, 0.3);
+    padding: 15px;
+    margin-top: 15px;
+    display: none;
+  }
+  
+  .deliveryWarning .errorMsg img {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-top: -12px;
+  }
+  
+  .deliveryWarning .errorMsg p {
+    padding-left: 35px;
+  }
+  
+  .invalidMsg {
+    padding: 5px 0 10px;
+    color: rgba(212, 0, 0, 0.6);
+    display: none;
+  }
+  
+  .orderDiscount {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    padding: 30px 20px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  
+  .orderDiscount p {
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .orderDiscount span,
+  .orderDiscount i {
+    color: #c80000;
+  }
+  // --------------------- Mobile Table-----------------
+  .mobileTable {
+    border: 1px solid $textColor;
+    padding: 0px 15px;
+  }
+  .mobileTable__item {
+    margin-top: 20px;
+  }
+  .mobileTable__item {
+    border-bottom: 1px solid $textColor;
+  }
+  .mobileTable__image-block {
+    width: 100px;
+    box-shadow: 4px 4px 13px 1px $bgColor;
+  }
+  .mobileTable__product {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .mobileTable__image {
+    width: 100%;
+    object-fit: cover;
+  }
+  .mobileTable__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: "Montserrat";
+  }
+  .mobileTable__delete {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .mobileTable__price {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobileTable__total {
+    font-size: 20px;
+    font-family: 'Montserrat';
+  }
+  .mobileTable__totalPrice {
+    float: right;
+  }
+  
+// --------------------- Mobile Table-----------------
+  

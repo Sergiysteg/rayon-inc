@@ -23,6 +23,22 @@
             z-index: 1;
         }
     }
+    .home__button {
+        border: 1px solid $textColor;
+        padding: 10px;
+        font-family: 'Montserrat';
+        font-size: 16pt;
+        background-color: transparent;
+        color: $textColor;
+        transition: all .2s linear;
+    }
+    .home__button:hover {
+        color: white;
+        background-color: $bgColor;
+    }
+    .home__button:focus {
+        outline: none;
+    }
     .video-wrapper .details {
         position: absolute;
         bottom: 30px;
@@ -51,172 +67,78 @@
 .clothes-wrapper {
     border-top: 1px solid $textColor;
     border-bottom: 1px solid $textColor;
-    padding-bottom: 20px;
-    margin-top: 20px;
-
-    .navBlock nav {
-        margin: 10px 0px;
-    }
-    .navBlock nav a {
-        margin-right: 10px;
-        font-family: 'Bebas Bold';
-        font-size: 21px;
-    }
-    .navBlock nav a:hover {
-        color: $activeColor;
-    }
-    .catalog-wrapper {
-        display: flex;
-        flex-flow: wrap;
-    }
-    .catalog-item {
-        width: 24%;
-        height: 300px;
-        position: relative;
-        overflow: hidden;
-        padding: 10px;
-    }
-    .catalog-item img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        z-index: -1;
-
-        transform: translate(-50%, -50%);
-        width: 120%;
-    }
-    .catalog-item span {
-        font-family: 'Montserrat Light';
-        font-size: 20px;
-        font-style: italic;
-        margin: 10px;
-        color: $textColor;
-    }
-    .catalog-item:hover .catalog-content {
-        opacity: 1;
-    }
-    .catalog-item .catalog-content {
-        width: 100%;
-        height: 100%;
-
-        background-color: rgba(0, 0, 0, 0.6);
-        color: $bgWhiteColor;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
-
-        opacity: 0;
-        transition: opacity 0.2s linear;
-
-        .catalog-title {
-        font-family: 'Bebas';
-        font-size: 25px;
-        }
-    }
-    .catalog-button {
-        display: flex;
-        justify-content: center;
-    }
-    .catalog-button div {
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        background-color: rgba(255, 255, 255, 0.6);
-        line-height: 1;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        margin: 5px;
-        transition: background-color .2s linear;
-    }
-    .catalog-button div:hover {
-        background-color: $activeColor;    
-    } 
-    .catalog-button div:hover > i {
-        color: white;
-    }
-    .catalog-button div i {
-        color: $bgColor;
-        font-size: 30px;
-        transition: color .2s linear;
-    }
-    // .catalog-img p {
-    //     font-family: Arial, Helvetica, sans-serif;
-    //     font-size: 23px;
-    //     font-style: italic;
-    //     padding: 5px;
-    //     color: $textColor;
-    // }
-    // .catalog-img img {
-    //     position: absolute;
-    //     left: 50%;
-    //     top: 50%;
-    //     transform: translate(-50%, -50%);
-    //     width: 100%;
-    //     z-index: -1;
-    // }
+    margin-top: 20px; 
 }
-
-.looks {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0px;
-
-    .looks-item {
-        width: 33%;
-        height: 500px;
-        position: relative;
-        overflow: hidden;
-        background: $bgWhiteColor;
-        display: flex;
-        align-items: center;
-        box-sizing: border-box;
-    }
-    .looks-img {
-        position: absolute;
-        height: 100%;
-        left: -70px;
-        bottom: -10px;
-        z-index: 1;
-    }
-    .looks-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-right: 20px;
-    }
-    .looks-content div {
-        max-width: 50%;
-        text-align: right;
-        margin-bottom: 5px;
-    }
-    .looks-title {
-        font-family: 'Bebas';
-        font-size: 70px;
-        line-height: 1em;
-    }
-    .looks-text {
-        font-family: 'Montserrat Light';
-        font-size: 15px;
-    }
-    .looks-button {
-        padding: 10px;
-        color: black;
-        font-family: 'Montserrat Light';
-        font-size: 20px;
-        outline: 1px solid black;
-    }
-    .looks-button:hover {
-        background-color: $activeColor;
-        outline: none;
-    }
+nav {
+    margin: 10px 0px;
 }
+a {
+    margin-right: 10px;
+    color: rgba(0,0,0,.5);
+    font-family: 'Bebas Bold';
+    font-size: 23px;
+    display: inline-block;
+    text-decoration: none;
+}
+a:hover {
+    color: $activeColor;
+}
+// .looks {
+//     display: flex;
+//     justify-content: space-between;
+//     margin: 20px 0px;
+
+//     .looks-item {
+//         width: 33%;
+//         height: 500px;
+//         position: relative;
+//         overflow: hidden;
+//         background: $bgWhiteColor;
+//         display: flex;
+//         align-items: center;
+//         box-sizing: border-box;
+//     }
+//     .looks-img {
+//         position: absolute;
+//         height: 100%;
+//         left: -70px;
+//         bottom: -10px;
+//         z-index: 1;
+//     }
+//     .looks-content {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-end;
+//         margin-right: 20px;
+//     }
+//     .looks-content div {
+//         max-width: 50%;
+//         text-align: right;
+//         margin-bottom: 5px;
+//     }
+//     .looks-title {
+//         font-family: 'Bebas';
+//         font-size: 70px;
+//         line-height: 1em;
+//     }
+//     .looks-text {
+//         font-family: 'Montserrat Light';
+//         font-size: 15px;
+//     }
+//     .looks-button {
+//         padding: 10px;
+//         color: black;
+//         border: 1px solid black;
+//         font-family: 'Bebas';
+//         font-size: 20px;
+//         letter-spacing: 2px;
+
+//         transition: background .2s linear;
+//     }
+//     .looks-button:hover {
+//         background: $activeColor;
+//         border: 1px solid $activeColor;
+//         color: white;
+//         cursor: pointer;
+//     }
+// }
